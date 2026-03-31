@@ -41,29 +41,6 @@ src/
 
 ---
 
-# 🚀 Visual Architecture Diagram 
-
-## 🧩 Architecture Flow
-
-graph TD
-    A[Browser Request] --> B[Express Server]
-    B --> C[React SSR Renderer]
-    C --> D[HTML Response]
-    D --> E[Browser]
-    E --> F[Hydration React App]
-
-    subgraph Server
-        B
-        C
-    end
-
-    subgraph Client
-        E
-        F
-    end
-
----
-
 ## ⚡ Rendering Strategy
 
 - First Load → Server-Side Rendered HTML (fast + SEO)
@@ -134,6 +111,12 @@ This project demonstrates:
 - Deep understanding of React SSR internals
 - Ability to build framework-level architecture
 - Knowledge of performance, SEO, and rendering strategies
+
+---
+
+## 📘 Documentation
+
+👉 [Download Full Documentation](./docs/react_ssr_documentation.pdf)
 
 ---
 
