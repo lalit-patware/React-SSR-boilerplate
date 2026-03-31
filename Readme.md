@@ -45,7 +45,6 @@ src/
 
 ## 🧩 Architecture Flow
 
-```mermaid
 graph TD
     A[Browser Request] --> B[Express Server]
     B --> C[React SSR Renderer]
