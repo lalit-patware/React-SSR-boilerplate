@@ -41,10 +41,37 @@ src/
 
 ---
 
-## ⭐ Support
+# 🚀 Visual Architecture Diagram 
 
-If you found this useful, consider giving it a ⭐ on GitHub!
+## 🧩 Architecture Flow
 
+```mermaid
+graph TD
+    A[Browser Request] --> B[Express Server]
+    B --> C[React SSR Renderer]
+    C --> D[HTML Response]
+    D --> E[Browser]
+    E --> F[Hydration React App]
+
+    subgraph Server
+        B
+        C
+    end
+
+    subgraph Client
+        E
+        F
+    end
+
+---
+
+## ⚡ Rendering Strategy
+
+- First Load → Server-Side Rendered HTML (fast + SEO)
+- After Load → Client Hydration (interactive UI)
+- Routing → Handled both on server & client
+
+---
 
 ## 🚀 Getting Started
 
@@ -117,3 +144,9 @@ This project demonstrates:
 Senior Frontend Engineer
 
 ---
+
+
+## ⭐ Support
+
+If you found this useful, consider giving it a ⭐ on GitHub!
+
